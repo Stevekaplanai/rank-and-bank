@@ -11,7 +11,7 @@ on:
       pregraduate_building:
         description: "Building id to stage near graduation"
         type: string
-        default: "brickell-flatiron"
+        default: "the-crosby"
       pregraduate_mcap:
         description: "Target mcap SOL before demo"
         type: string

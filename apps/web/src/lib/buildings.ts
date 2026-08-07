@@ -7,4 +7,5 @@ export function getBuilding(id: string): Building | undefined {
   return buildings.find((b) => b.id === id);
 }
 
-export const CONTROVERSIAL_BUILDING_ID = "brickell-flatiron";
+/** Demo rally pick: lowest Ryan rank in the featured-5 set (`the-crosby`, Ryan #79). */
+export const CONTROVERSIAL_BUILDING_ID = "the-crosby";

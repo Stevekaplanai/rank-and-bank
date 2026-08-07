@@ -20,4 +20,4 @@ Authoritative product/architecture docs (read these first):
 - Holder chat is client-side state gated by real (or mock) token balance
 
 ## Default demo path
-Leaderboard → `brickell-flatiron` → buy 0.1 SOL → rank moves → holder chat → graduate.
+Leaderboard → `the-crosby` → buy 0.1 SOL → rank moves → holder chat → graduate.

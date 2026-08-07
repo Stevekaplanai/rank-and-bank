@@ -1,127 +1,212 @@
 [
   {
-    "id": "aria-on-the-bay",
-    "name": "Aria on the Bay",
-    "address": "690 NE 18th St, Miami, FL 33132",
-    "neighborhood": "Edgewater",
-    "ryans_rank": 7,
-    "ryans_score": 8.2,
+    "id": "one-thousand-museum",
+    "name": "One Thousand Museum",
+    "address": "1000 Biscayne Blvd, Miami, FL 33132",
+    "neighborhood": "Park West / Miami World Center",
+    "ryans_rank": 6,
+    "ryans_score": 9,
     "score_breakdown": {
-      "location": 8.5,
-      "amenities": 9.0,
-      "views": 8.0,
-      "value": 7.5,
-      "noise": 8.0
+      "location": 10,
+      "amenities": 10,
+      "views": 10,
+      "value": 5,
+      "noise": 8
     },
-    "review_excerpt": "Great views of the bay, solid amenities, but the location is still developing. One of Edgewater's better newer towers.",
+    "review_excerpt": "One Thousand Museum is a beautiful building. Full stop. It's a Zaha Hadid masterpiece, it's architecturally stunning, and there's nothing else like it in Miami or arguably anywhere in the Western Hemisphere. The amenities are world-class, the units are enormous, and the exclusivity is real. But the prices are outrageous, that's just my honest take.",
     "photos": [
-      "/images/buildings/aria-1.svg",
-      "/images/buildings/aria-2.svg"
+      "/images/buildings/one-thousand-museum-1.jpg",
+      "/images/buildings/one-thousand-museum-2.jpg"
     ],
     "seed_comments": [
-      { "user": "7xK2...9mPq", "text": "The pool deck is insane — sunset hits different here.", "tokens": 47 },
-      { "user": "3nRb...1kLw", "text": "Ryan is wrong about the views. Bay + downtown at once.", "tokens": 22 },
-      { "user": "9pTm...4sVx", "text": "Holding for graduation. Underrated Edgewater.", "tokens": 81 }
+      {
+        "user": "7xK2...9mPq",
+        "text": "Zaha Hadid print. Paying for the design pedigree and I am not apologizing.",
+        "tokens": 112
+      },
+      {
+        "user": "3nRb...1kLw",
+        "text": "Ryan is right on value being weak — still buying the icon.",
+        "tokens": 48
+      },
+      {
+        "user": "9pTm...4sVx",
+        "text": "Museum Row flex. Holding through graduation.",
+        "tokens": 67
+      },
+      {
+        "user": "5aQw...8nHj",
+        "text": "Nothing else in Miami looks like this. Stacking.",
+        "tokens": 39
+      }
     ]
   },
   {
-    "id": "muse-residences",
-    "name": "Muse Residences",
-    "address": "17121 Collins Ave, Sunny Isles Beach, FL 33160",
-    "neighborhood": "Sunny Isles",
-    "ryans_rank": 2,
-    "ryans_score": 9.4,
+    "id": "900-biscayne",
+    "name": "900 Biscayne Bay",
+    "address": "900 Biscayne Blvd, Miami, FL 33132",
+    "neighborhood": "Park West / Miami World Center",
+    "ryans_rank": 1,
+    "ryans_score": 9,
     "score_breakdown": {
-      "location": 9.0,
-      "amenities": 9.5,
-      "views": 9.8,
-      "value": 8.5,
-      "noise": 9.2
+      "location": 10,
+      "amenities": 8,
+      "views": 10,
+      "value": 10,
+      "noise": 8
     },
-    "review_excerpt": "Ultra-luxury done right. Oceanfront glass, absurd amenities, and finishes that feel finished. Ryan's near-top pick for a reason.",
+    "review_excerpt": "900 Biscayne is one of the best values in Greater Downtown Miami, full stop. You get massive floor plans, permanently preserved bay views, semi-private elevators, recently renovated amenities, and a well-managed building, all at a price point that significantly undercuts newer towers with smaller units.",
     "photos": [
-      "/images/buildings/muse-1.svg",
-      "/images/buildings/muse-2.svg"
+      "/images/buildings/900-biscayne-1.webp",
+      "/images/buildings/900-biscayne-2.webp"
     ],
     "seed_comments": [
-      { "user": "5aQw...8nHj", "text": "Obviously #1. Ryan somehow put this at #2.", "tokens": 120 },
-      { "user": "2cDf...6yLk", "text": "Paying up for Muse. Worth every lamport.", "tokens": 65 },
-      { "user": "8mNp...3rTs", "text": "If you're only backing one building, make it this.", "tokens": 33 }
+      {
+        "user": "2cDf...6yLk",
+        "text": "Ryan #1 for a reason. Bay views + value = easy bag.",
+        "tokens": 95
+      },
+      {
+        "user": "8mNp...3rTs",
+        "text": "OG Museum Row. Renovated amenities hit different.",
+        "tokens": 41
+      },
+      {
+        "user": "4kLm...2pQr",
+        "text": "Undercuts the new glass boxes. Backing 900.",
+        "tokens": 58
+      },
+      {
+        "user": "6tUv...7wXy",
+        "text": "Permanently preserved bay corridor. That is the play.",
+        "tokens": 33
+      }
     ]
   },
   {
-    "id": "brickell-flatiron",
-    "name": "Brickell Flatiron",
-    "address": "1000 Brickell Plaza, Miami, FL 33131",
+    "id": "paramount-mwc",
+    "name": "Paramount Miami World Center",
+    "address": "851 NE 1st Ave, Miami, FL 33132",
+    "neighborhood": "Park West / Miami World Center",
+    "ryans_rank": 18,
+    "ryans_score": 8,
+    "score_breakdown": {
+      "location": 8,
+      "amenities": 10,
+      "views": 8,
+      "value": 7,
+      "noise": 6
+    },
+    "review_excerpt": "Paramount Miami World Center is the amenity building of Miami. Nothing else comes close to the sheer volume and quality of what's available to residents, the pool deck alone is worth the price of admission. But you need to know what you're getting into. This is a party building with influencer energy, and the units themselves are fine but not exceptional.",
+    "photos": [
+      "/images/buildings/paramount-mwc-1.jpg",
+      "/images/buildings/paramount-mwc-2.jpg"
+    ],
+    "seed_comments": [
+      {
+        "user": "1aBc...5dEf",
+        "text": "Amenity king. Pool deck alone prints.",
+        "tokens": 74
+      },
+      {
+        "user": "9gHi...0jKl",
+        "text": "Influencer energy is not a bug — it is the liquidity.",
+        "tokens": 52
+      },
+      {
+        "user": "3mNo...4pQr",
+        "text": "Ryan says party building. Community says resort living.",
+        "tokens": 44
+      },
+      {
+        "user": "7sTu...8vWx",
+        "text": "Units are mid. Amenities are not mid.",
+        "tokens": 29
+      }
+    ]
+  },
+  {
+    "id": "icon-brickell",
+    "name": "Icon Brickell",
+    "address": "465-495 Brickell Ave, Miami, FL 33131",
     "neighborhood": "Brickell",
-    "ryans_rank": 10,
-    "ryans_score": 6.8,
+    "ryans_rank": 38,
+    "ryans_score": 7,
     "score_breakdown": {
-      "location": 9.0,
-      "amenities": 7.0,
-      "views": 8.5,
-      "value": 5.5,
-      "noise": 4.5
+      "location": 8,
+      "amenities": 9,
+      "views": 8,
+      "value": 7,
+      "noise": 6
     },
-    "review_excerpt": "Location can't be beat, but Ryan docks hard on noise and value. The community keeps buying anyway — classic expert-vs-market divergence.",
+    "review_excerpt": "Icon Brickell is the OG branded luxury building of Brickell, and it's iconic any way you look at it. Like a 2000s pop star, it's been in the news, it's had a lot of work done, and it's very flashy. The amenities, especially the pool and gym, are among the best in Miami. The unit sizes are generous for the price point.",
     "photos": [
-      "/images/buildings/flatiron-1.svg",
-      "/images/buildings/flatiron-2.svg"
+      "/images/buildings/icon-brickell-1.webp",
+      "/images/buildings/icon-brickell-2.webp"
     ],
     "seed_comments": [
-      { "user": "4kLm...2pQr", "text": "Ryan says #10. We're taking it to #1.", "tokens": 94 },
-      { "user": "6tUv...7wXy", "text": "Noise is overrated as a knock. You're in Brickell.", "tokens": 41 },
-      { "user": "1aBc...5dEf", "text": "Controversial for a reason. Backing the flatiron.", "tokens": 58 }
+      {
+        "user": "2yZa...3bCd",
+        "text": "OG Brickell branded luxury. Drama priced in.",
+        "tokens": 61
+      },
+      {
+        "user": "5eFg...6hIj",
+        "text": "Pool closed for years — now reopening thesis.",
+        "tokens": 47
+      },
+      {
+        "user": "8kLm...9nOp",
+        "text": "Ryan mid. Waterfront location still eats.",
+        "tokens": 38
+      },
+      {
+        "user": "4pQr...1sTu",
+        "text": "Facelift tower. Buying the location story.",
+        "tokens": 55
+      }
     ]
   },
   {
-    "id": "jade-beach",
-    "name": "Jade Beach",
-    "address": "17001 Collins Ave, Sunny Isles Beach, FL 33160",
-    "neighborhood": "Sunny Isles",
-    "ryans_rank": 15,
-    "ryans_score": 5.9,
+    "id": "the-crosby",
+    "name": "The Crosby",
+    "address": "601 N Miami Ave, Miami, FL 33136",
+    "neighborhood": "Park West / Miami World Center",
+    "ryans_rank": 79,
+    "ryans_score": 6,
     "score_breakdown": {
-      "location": 7.5,
-      "amenities": 6.0,
-      "views": 7.0,
-      "value": 5.0,
-      "noise": 5.5
+      "location": 7,
+      "amenities": 7,
+      "views": 6,
+      "value": 6,
+      "noise": 6
     },
-    "review_excerpt": "Older Sunny Isles inventory. Ryan puts it mid-low — aging amenities, competitive comps next door. Dark horse if the renovation thesis pays.",
+    "review_excerpt": "The Crosby is a very specific product for a very specific buyer. If you're looking for a turnkey short-term rental investment in the heart of Miami World Center, it checks a lot of boxes. Related Group built it, but they're strictly a developer, not a property manager. Once the building is handed off to the HOA, the long-term management quality is an open question.",
     "photos": [
-      "/images/buildings/jade-1.svg",
-      "/images/buildings/jade-2.svg"
+      "/images/buildings/the-crosby-1.webp",
+      "/images/buildings/the-crosby-2.webp"
     ],
     "seed_comments": [
-      { "user": "9gHi...0jKl", "text": "Sleeper pick. Renovation value play.", "tokens": 28 },
-      { "user": "3mNo...4pQr", "text": "Ryan underrates the beach access here.", "tokens": 19 },
-      { "user": "7sTu...8vWx", "text": "Cheap entry on the curve. Stacking Jade.", "tokens": 52 }
-    ]
-  },
-  {
-    "id": "continuum-south",
-    "name": "Continuum South Beach",
-    "address": "50 S Pointe Dr, Miami Beach, FL 33139",
-    "neighborhood": "South Beach",
-    "ryans_rank": 4,
-    "ryans_score": 8.9,
-    "score_breakdown": {
-      "location": 9.5,
-      "amenities": 8.5,
-      "views": 9.0,
-      "value": 7.5,
-      "noise": 7.0
-    },
-    "review_excerpt": "South of Fifth royalty. Ryan loves the location and the vibe; amenities age gracefully. Always in the conversation for top tier.",
-    "photos": [
-      "/images/buildings/continuum-1.svg",
-      "/images/buildings/continuum-2.svg"
-    ],
-    "seed_comments": [
-      { "user": "2yZa...3bCd", "text": "SoFi forever. Continuum holds.", "tokens": 77 },
-      { "user": "5eFg...6hIj", "text": "Best address in Miami Beach. Period.", "tokens": 44 },
-      { "user": "8kLm...9nOp", "text": "Backing Continuum over the newer glass boxes.", "tokens": 36 }
+      {
+        "user": "6vWx...2yZa",
+        "text": "Ryan has this at #79. Purpose-built STR — community disagrees.",
+        "tokens": 88
+      },
+      {
+        "user": "3bCd...5eFg",
+        "text": "Turnkey Miami World Center income. Underrated.",
+        "tokens": 42
+      },
+      {
+        "user": "7hIj...8kLm",
+        "text": "Controversial for a reason. We are taking this up the board.",
+        "tokens": 71
+      },
+      {
+        "user": "9nOp...0qRs",
+        "text": "Low Ryan rank = entry alpha. Stacking Crosby.",
+        "tokens": 36
+      }
     ]
   }
 ]

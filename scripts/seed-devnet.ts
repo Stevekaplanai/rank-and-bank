@@ -10,7 +10,7 @@
  * Usage:
  *   cd C:\Users\User\OneDrive\Rank-and-Bank
  *   npm run seed
- *   npx tsx scripts/seed-devnet.ts --pregraduate brickell-flatiron 4.8
+ *   npx tsx scripts/seed-devnet.ts --pregraduate the-crosby 4.8
  *
  * Writes deployments/devnet.json with mint + PDA addresses.
  *
@@ -145,12 +145,12 @@ async function main() {
     buildings: buildingMap,
     seededAt: new Date().toISOString(),
     pregraduate: {
-      buildingId: args.pregraduateId ?? "brickell-flatiron",
+      buildingId: args.pregraduateId ?? "the-crosby",
       targetMcapSol: args.pregraduateMcap ?? 4.8,
     },
     notes: placeholder
-      ? "Placeholder program - SDK mock mode. Ryan controversial = brickell-flatiron (#10) staged ~4.8 SOL mcap."
-      : "Real program id - run initialize_building for each id before live buys. Pregraduate brickell-flatiron @ ~4.8 SOL.",
+      ? "Placeholder program - SDK mock mode. Ryan controversial = the-crosby (#79) staged ~4.8 SOL mcap."
+      : "Real program id - run initialize_building for each id before live buys. Pregraduate the-crosby @ ~4.8 SOL.",
   };
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });

@@ -109,12 +109,12 @@ export class RankAndBankClient {
   private seedMockState() {
     for (const id of Object.keys(this.deployment.buildings)) {
       let supply = 40;
-      if (id === "muse-residences") supply = 120;
-      if (id === "continuum-south") supply = 90;
-      if (id === "aria-on-the-bay") supply = 55;
-      if (id === "jade-beach") supply = 25;
+      if (id === "one-thousand-museum") supply = 120;
+      if (id === "900-biscayne") supply = 90;
+      if (id === "paramount-mwc") supply = 55;
+      if (id === "icon-brickell") supply = 25;
       // Controversial building near graduation (~4.8 SOL mcap) for demo
-      if (id === "brickell-flatiron") {
+      if (id === "the-crosby") {
         supply = 650;
         while (marketCapSol(supply) < 4.8 && supply < 5000) supply += 10;
         while (marketCapSol(supply) > 4.85 && supply > 100) supply -= 5;

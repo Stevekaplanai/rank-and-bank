@@ -27,7 +27,7 @@ npm run dev
 
 Open http://localhost:3000 — Phantom optional in mock mode; buys update local state + sessionStorage balances.
 
-Controversial demo building: **Brickell Flatiron** (`brickell-flatiron`) — Ryan #10, staged near 4.8 SOL mcap.
+Controversial demo building: **The Crosby** (`the-crosby`) — Ryan #79, staged near 4.8 SOL mcap.
 
 ## Env vars (`apps/web`)
 
@@ -74,7 +74,7 @@ cd ../.. && npm install && npm run build -w @rank-and-bank/sdk
 ### Program — **manual only** (`workflow_dispatch`)
 `.github/workflows/deploy-program.yml` is **not** triggered by push or PR. Auto-deploying the Anchor program on every commit is intentionally **disabled** — it burns SOL and can break a live demo mid-day.
 
-Trigger only from **Actions → Deploy Anchor Program (devnet) → Run workflow** (optional seed + pregraduate Flatiron to ~4.8 SOL).
+Trigger only from **Actions → Deploy Anchor Program (devnet) → Run workflow** (optional seed + pregraduate Crosby to ~4.8 SOL).
 
 GitHub Secrets (Daniel / repo admin):
 
@@ -92,7 +92,7 @@ See [programs/bonding_curve/README.md](./programs/bonding_curve/README.md).
 
 ```powershell
 cd C:\Users\User\OneDrive\Rank-and-Bank
-npm run seed -- --pregraduate brickell-flatiron 4.8
+npm run seed -- --pregraduate the-crosby 4.8
 ```
 
 ## Demo script
@@ -101,7 +101,7 @@ See [docs/DEMO_SCRIPT.md](./docs/DEMO_SCRIPT.md) (2 minutes, **5 SOL** graduatio
 
 ## Team checklist
 
-- [ ] Ryan: replace placeholder photos with real shots if available
+- [ ] Ryan: second photo angles if only hero shots are in `/images/buildings`
 - [ ] Daniel: `anchor deploy` → update `deployments/devnet.json` + Vercel env
 - [ ] Steve: wallet + buy path verified in mock, then against devnet
 - [ ] Carlos: chart / feed / graduation bar on detail + home

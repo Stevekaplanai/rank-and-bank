@@ -8,31 +8,31 @@
     "slopeLamports": 10000
   },
   "buildings": {
-    "aria-on-the-bay": {
-      "mint": "6d7waEyczXVqJscHQsZsWJhtQEMVtFp53H8pRF6uU3Mc",
-      "buildingPda": "CmgLsjPd4oYUGtFK81HtWF3GgJQz7FTBBwHpmQA19zjo"
+    "one-thousand-museum": {
+      "mint": "4UqgJf2efbMaxTLoQbd9mX9Poo7Wqasq1b74eWXvdCti",
+      "buildingPda": "9jGSw39FzhUnzvk4Egvcb9MYu4iUxS7gA21KrQBQjmZ6"
     },
-    "muse-residences": {
-      "mint": "u9qgxwSZig6rfVWs21JBHx7UaMoruYbC4HmLzmyAhRU",
-      "buildingPda": "3LBsy2FyNvHvNWz6YMES4ferrhd4En4AqEwfdaCG2kjh"
+    "900-biscayne": {
+      "mint": "Fb5aEx5GmWUv92SGv88Y4pirmzAi8hs8FwXeav3jQvqk",
+      "buildingPda": "GDpZoZeZPQXdjdoUx9eY2dtBEMX3KH76CrHagrEDzsHk"
     },
-    "brickell-flatiron": {
-      "mint": "9XwiovZDgW8bxytvtGhQ2a7maLTSxzvton96MnS2GxWq",
-      "buildingPda": "EVmhWJ5NFcKJ9z4upiZyV7zHhZiTCSdYy3c1sNAJuT4F"
+    "paramount-mwc": {
+      "mint": "nsDbQEsaf39erE8RZTxptrXs7UKx6u7ExRdFS8RUPuK",
+      "buildingPda": "5vUrLrkL9dXvcK6zJuNgW6r8Q2xh7giTjc1WewZKXp5m"
     },
-    "jade-beach": {
-      "mint": "6JeL1wdjdqWEeb13JKqFmihKQUQyqr3fng1WBA7QytPG",
-      "buildingPda": "22MSprvc4TVv2CtS2c86Q5mUmZT94wKD6s11maf1mJGq"
+    "icon-brickell": {
+      "mint": "7aXSD1WZgsqX4vFwcJ56LhcmSc4KKhZBueRRCz2KhaFp",
+      "buildingPda": "86HDWnx5s1Jfbj3dce1AeoEbiYMknvwQAyVubjoCJBgF"
     },
-    "continuum-south": {
-      "mint": "4FAWDdgEEvt7WMRVLvJqjCSvQr3yuX671XJHPK9eAdLL",
-      "buildingPda": "6EXuK36s2nYRg68r4EBGrnWJLCF7d8m2rVyWdT3v1uDR"
+    "the-crosby": {
+      "mint": "7KNtt55khcJ9M5FPNusndLhehUGsMdy1vhs2fti6yVdT",
+      "buildingPda": "9joSKM2Gvm56V9YDQNJWEFgts8iCAgBTjigozSVNrLEE"
     }
   },
-  "seededAt": "2026-08-07T00:00:04.799Z",
+  "seededAt": "2026-08-07T00:11:36.956Z",
   "pregraduate": {
-    "buildingId": "brickell-flatiron",
+    "buildingId": "the-crosby",
     "targetMcapSol": 4.8
   },
-  "notes": "Placeholder program - SDK mock mode. Ryan controversial = brickell-flatiron (#10) staged ~4.8 SOL mcap."
+  "notes": "Placeholder program - SDK mock mode. Ryan controversial = the-crosby (#79) staged ~4.8 SOL mcap."
 }
