@@ -2,5 +2,6 @@
   "version": 2,
   "framework": "nextjs",
   "installCommand": "cd ../.. && npm install",
-  "buildCommand": "cd ../.. && npm run build -w @rank-and-bank/sdk && cd apps/web && npx next build"
+  "buildCommand": "cd ../.. && npm run build -w @rank-and-bank/sdk && npm run build -w @rank-and-bank/web",
+  "engines": { "node": "20.x" }
 }
