@@ -17,3 +17,6 @@ packages/sdk/dist
 .idea
 .vscode
 .cursor
+
+.superpowers/
+
