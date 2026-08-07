@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -18,6 +18,8 @@ export default function BuildingPage() {
   const building = getBuilding(id);
   const { data: market, isLoading } = useBuildingMarket(id);
   const [photoIndex, setPhotoIndex] = useState(0);
+
+  useEffect(() => setPhotoIndex(0), [id]);
 
   if (!building) {
     return (
