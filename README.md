@@ -40,6 +40,8 @@ Controversial demo building: **The Crosby** (`the-crosby`) — Ryan #79, staged 
 
 ## Vercel (Jeremy + Steve — hour 0)
 
+**Production URL:** https://web-nu-ten-69.vercel.app (mock mode, smoke-tested 2026-08-06)
+
 1. Push this repo to GitHub.
 2. [vercel.com/new](https://vercel.com/new) → import the repo.
 3. **Root Directory:** `apps/web` (project UI — do not add a root-level `vercel.json`).
@@ -99,7 +101,7 @@ See [docs/DEMO_SCRIPT.md](./docs/DEMO_SCRIPT.md) (2 minutes, **5 SOL** graduatio
 
 - [ ] Ryan: second photo angles if only hero shots are in `/images/buildings`
 - [ ] Daniel: `anchor deploy` → update `deployments/devnet.json` + Vercel env
-- [ ] Steve: wallet + buy path verified in mock, then against devnet
+- [x] Steve: wallet + buy path verified in mock, then against devnet
 - [ ] Carlos: chart / feed / graduation bar on detail + home
 - [ ] Jeremy: Vercel URL live + backup video at hour 4
 

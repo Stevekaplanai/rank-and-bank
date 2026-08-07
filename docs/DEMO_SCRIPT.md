@@ -8,7 +8,7 @@ Controversial building: **The Crosby** (`the-crosby`) — Ryan #79 (lowest of th
 Pre-demo checklist:
 - [ ] Phantom set to **Devnet** (not Mainnet)
 - [ ] Wallet connected, funded (~2 SOL airdrop)
-- [ ] App open on Vercel production URL
+- [ ] App open on Vercel production URL: **https://web-nu-ten-69.vercel.app**
 - [ ] Crosby staged ~4.8 / 5 SOL mcap (SDK mock does this by default; on-chain: seed with `--pregraduate the-crosby 4.8`)
 - [ ] Solana Explorer tab ready on phone (`?cluster=devnet`)
 - [ ] **Hour 4:** backup screen recording of this exact script (if live buy fails, play the video)
