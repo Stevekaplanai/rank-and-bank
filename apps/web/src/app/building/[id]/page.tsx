@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -16,6 +17,7 @@ export default function BuildingPage() {
   const id = String(params.id ?? "");
   const building = getBuilding(id);
   const { data: market, isLoading } = useBuildingMarket(id);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   if (!building) {
     return (
@@ -29,6 +31,7 @@ export default function BuildingPage() {
   }
 
   const scoreEntries = Object.entries(building.score_breakdown);
+  const hasMultiplePhotos = building.photos.length > 1;
 
   return (
     <div className="space-y-6">
@@ -40,8 +43,8 @@ export default function BuildingPage() {
         <div className="space-y-4">
           <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-white/10">
             <Image
-              src={building.photos[0]}
-              alt={building.name}
+              src={building.photos[photoIndex]}
+              alt={`${building.name} — photo ${photoIndex + 1}`}
               fill
               className="object-cover"
               priority
@@ -61,6 +64,49 @@ export default function BuildingPage() {
               <span className="absolute right-4 top-4 rounded bg-coral px-3 py-1 text-xs font-bold uppercase text-white">
                 Graduated
               </span>
+            )}
+            {hasMultiplePhotos && (
+              <>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setPhotoIndex((i) =>
+                      i === 0 ? building.photos.length - 1 : i - 1
+                    )
+                  }
+                  className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-navy/70 text-foam backdrop-blur-sm transition hover:bg-navy/90"
+                  aria-label="Previous photo"
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setPhotoIndex((i) =>
+                      i === building.photos.length - 1 ? 0 : i + 1
+                    )
+                  }
+                  className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-navy/70 text-foam backdrop-blur-sm transition hover:bg-navy/90"
+                  aria-label="Next photo"
+                >
+                  ›
+                </button>
+                <div className="absolute bottom-4 right-6 flex gap-1.5">
+                  {building.photos.map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={() => setPhotoIndex(index)}
+                      className={`h-2 w-2 rounded-full transition ${
+                        index === photoIndex
+                          ? "bg-teal"
+                          : "bg-white/40 hover:bg-white/60"
+                      }`}
+                      aria-label={`Show photo ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </>
             )}
           </div>
 
