@@ -48,7 +48,7 @@ Controversial demo building: **The Crosby** (`the-crosby`) — Ryan #79, staged 
    | Setting | Command |
    |---|---|
    | Install Command | `cd ../.. && npm install` |
-   | Build Command | `cd ../.. && npm run build -w @rank-and-bank/sdk && cd apps/web && npx next build` |
+   | Build Command | `cd ../.. && npm run build -w @rank-and-bank/sdk && npm run build -w @rank-and-bank/web` |
 
 5. Environment variables — set **Production** and **Preview** for all four vars (hour-0 mock demo):
 
