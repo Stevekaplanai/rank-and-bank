@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_lang::system_program;
 use anchor_spl::token::{self, Burn, Mint, MintTo, Token, TokenAccount};
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("4xq72pkH2qLYe3SiiFsrNB7iHbnARe1BWMPA66QX62a9");
 
 /// Linear curve: price(supply) = BASE + supply * SLOPE (in lamports)
 pub const BASE_PRICE_LAMPORTS: u64 = 1_000_000; // 0.001 SOL

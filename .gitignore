@@ -12,6 +12,9 @@ target
 .anchor
 test-ledger
 **/.cargo
+**/target/
+*-keypair.json
+.rustc_info.json
 apps/web/tsconfig.tsbuildinfo
 packages/sdk/dist
 .idea
