@@ -40,7 +40,7 @@ Controversial demo building: **The Crosby** (`the-crosby`) — Ryan #79, staged 
 
 ## Vercel (Jeremy + Steve — hour 0)
 
-**Production URL:** https://web-nu-ten-69.vercel.app (mock mode, smoke-tested 2026-08-06)
+**Production URL:** https://web-nu-ten-69.vercel.app (mock mode; UI smoke passed 2026-08-06 — wallet/buy path still needs manual Phantom verify)
 
 1. Push this repo to GitHub.
 2. [vercel.com/new](https://vercel.com/new) → import the repo.
@@ -101,8 +101,10 @@ See [docs/DEMO_SCRIPT.md](./docs/DEMO_SCRIPT.md) (2 minutes, **5 SOL** graduatio
 
 - [ ] Ryan: second photo angles if only hero shots are in `/images/buildings`
 - [ ] Daniel: `anchor deploy` → update `deployments/devnet.json` + Vercel env
-- [x] Steve: wallet + buy path verified in mock, then against devnet
+- [ ] Steve: wallet + buy path verified in mock, then against devnet
 - [ ] Carlos: chart / feed / graduation bar on detail + home
 - [ ] Jeremy: Vercel URL live + backup video at hour 4
+
+Page smoke (leaderboard, detail, buy widget UI) passed on production URL 2026-08-06; wallet connect + mock buy still need manual verify on a Phantom device before demo.
 
 Tagline: **Ryan ranks them. The community backs them. The chain settles everything.**
