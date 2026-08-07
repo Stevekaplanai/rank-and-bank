@@ -1,0 +1,62 @@
+name: Web CI
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "apps/web/**"
+      - "packages/sdk/**"
+      - "data/**"
+      - "deployments/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/web-ci.yml"
+  pull_request:
+    paths:
+      - "apps/web/**"
+      - "packages/sdk/**"
+      - "data/**"
+      - "deployments/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/web-ci.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: web-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        run: npm install
+
+      - name: Build SDK
+        run: npm run build -w @rank-and-bank/sdk
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint web
+        run: npm run lint -w @rank-and-bank/web
+        continue-on-error: true
+
+      - name: Build Next.js (mock env)
+        run: npm run build -w @rank-and-bank/web
+        env:
+          NEXT_PUBLIC_CLUSTER: devnet
+          NEXT_PUBLIC_USE_MOCK: "true"
+          NEXT_PUBLIC_SOLANA_RPC: https://api.devnet.solana.com
+          NEXT_PUBLIC_PROGRAM_ID: BondCurvE11111111111111111111111111111111112

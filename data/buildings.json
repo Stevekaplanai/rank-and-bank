@@ -1,0 +1,127 @@
+[
+  {
+    "id": "aria-on-the-bay",
+    "name": "Aria on the Bay",
+    "address": "690 NE 18th St, Miami, FL 33132",
+    "neighborhood": "Edgewater",
+    "ryans_rank": 7,
+    "ryans_score": 8.2,
+    "score_breakdown": {
+      "location": 8.5,
+      "amenities": 9.0,
+      "views": 8.0,
+      "value": 7.5,
+      "noise": 8.0
+    },
+    "review_excerpt": "Great views of the bay, solid amenities, but the location is still developing. One of Edgewater's better newer towers.",
+    "photos": [
+      "/images/buildings/aria-1.svg",
+      "/images/buildings/aria-2.svg"
+    ],
+    "seed_comments": [
+      { "user": "7xK2...9mPq", "text": "The pool deck is insane — sunset hits different here.", "tokens": 47 },
+      { "user": "3nRb...1kLw", "text": "Ryan is wrong about the views. Bay + downtown at once.", "tokens": 22 },
+      { "user": "9pTm...4sVx", "text": "Holding for graduation. Underrated Edgewater.", "tokens": 81 }
+    ]
+  },
+  {
+    "id": "muse-residences",
+    "name": "Muse Residences",
+    "address": "17121 Collins Ave, Sunny Isles Beach, FL 33160",
+    "neighborhood": "Sunny Isles",
+    "ryans_rank": 2,
+    "ryans_score": 9.4,
+    "score_breakdown": {
+      "location": 9.0,
+      "amenities": 9.5,
+      "views": 9.8,
+      "value": 8.5,
+      "noise": 9.2
+    },
+    "review_excerpt": "Ultra-luxury done right. Oceanfront glass, absurd amenities, and finishes that feel finished. Ryan's near-top pick for a reason.",
+    "photos": [
+      "/images/buildings/muse-1.svg",
+      "/images/buildings/muse-2.svg"
+    ],
+    "seed_comments": [
+      { "user": "5aQw...8nHj", "text": "Obviously #1. Ryan somehow put this at #2.", "tokens": 120 },
+      { "user": "2cDf...6yLk", "text": "Paying up for Muse. Worth every lamport.", "tokens": 65 },
+      { "user": "8mNp...3rTs", "text": "If you're only backing one building, make it this.", "tokens": 33 }
+    ]
+  },
+  {
+    "id": "brickell-flatiron",
+    "name": "Brickell Flatiron",
+    "address": "1000 Brickell Plaza, Miami, FL 33131",
+    "neighborhood": "Brickell",
+    "ryans_rank": 10,
+    "ryans_score": 6.8,
+    "score_breakdown": {
+      "location": 9.0,
+      "amenities": 7.0,
+      "views": 8.5,
+      "value": 5.5,
+      "noise": 4.5
+    },
+    "review_excerpt": "Location can't be beat, but Ryan docks hard on noise and value. The community keeps buying anyway — classic expert-vs-market divergence.",
+    "photos": [
+      "/images/buildings/flatiron-1.svg",
+      "/images/buildings/flatiron-2.svg"
+    ],
+    "seed_comments": [
+      { "user": "4kLm...2pQr", "text": "Ryan says #10. We're taking it to #1.", "tokens": 94 },
+      { "user": "6tUv...7wXy", "text": "Noise is overrated as a knock. You're in Brickell.", "tokens": 41 },
+      { "user": "1aBc...5dEf", "text": "Controversial for a reason. Backing the flatiron.", "tokens": 58 }
+    ]
+  },
+  {
+    "id": "jade-beach",
+    "name": "Jade Beach",
+    "address": "17001 Collins Ave, Sunny Isles Beach, FL 33160",
+    "neighborhood": "Sunny Isles",
+    "ryans_rank": 15,
+    "ryans_score": 5.9,
+    "score_breakdown": {
+      "location": 7.5,
+      "amenities": 6.0,
+      "views": 7.0,
+      "value": 5.0,
+      "noise": 5.5
+    },
+    "review_excerpt": "Older Sunny Isles inventory. Ryan puts it mid-low — aging amenities, competitive comps next door. Dark horse if the renovation thesis pays.",
+    "photos": [
+      "/images/buildings/jade-1.svg",
+      "/images/buildings/jade-2.svg"
+    ],
+    "seed_comments": [
+      { "user": "9gHi...0jKl", "text": "Sleeper pick. Renovation value play.", "tokens": 28 },
+      { "user": "3mNo...4pQr", "text": "Ryan underrates the beach access here.", "tokens": 19 },
+      { "user": "7sTu...8vWx", "text": "Cheap entry on the curve. Stacking Jade.", "tokens": 52 }
+    ]
+  },
+  {
+    "id": "continuum-south",
+    "name": "Continuum South Beach",
+    "address": "50 S Pointe Dr, Miami Beach, FL 33139",
+    "neighborhood": "South Beach",
+    "ryans_rank": 4,
+    "ryans_score": 8.9,
+    "score_breakdown": {
+      "location": 9.5,
+      "amenities": 8.5,
+      "views": 9.0,
+      "value": 7.5,
+      "noise": 7.0
+    },
+    "review_excerpt": "South of Fifth royalty. Ryan loves the location and the vibe; amenities age gracefully. Always in the conversation for top tier.",
+    "photos": [
+      "/images/buildings/continuum-1.svg",
+      "/images/buildings/continuum-2.svg"
+    ],
+    "seed_comments": [
+      { "user": "2yZa...3bCd", "text": "SoFi forever. Continuum holds.", "tokens": 77 },
+      { "user": "5eFg...6hIj", "text": "Best address in Miami Beach. Period.", "tokens": 44 },
+      { "user": "8kLm...9nOp", "text": "Backing Continuum over the newer glass boxes.", "tokens": 36 }
+    ]
+  }
+]

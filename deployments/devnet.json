@@ -1,0 +1,38 @@
+{
+  "cluster": "devnet",
+  "programId": "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS",
+  "rpcUrl": "https://api.devnet.solana.com",
+  "graduationThresholdSol": 5,
+  "curve": {
+    "basePriceLamports": 1000000,
+    "slopeLamports": 10000
+  },
+  "buildings": {
+    "aria-on-the-bay": {
+      "mint": "6d7waEyczXVqJscHQsZsWJhtQEMVtFp53H8pRF6uU3Mc",
+      "buildingPda": "CmgLsjPd4oYUGtFK81HtWF3GgJQz7FTBBwHpmQA19zjo"
+    },
+    "muse-residences": {
+      "mint": "u9qgxwSZig6rfVWs21JBHx7UaMoruYbC4HmLzmyAhRU",
+      "buildingPda": "3LBsy2FyNvHvNWz6YMES4ferrhd4En4AqEwfdaCG2kjh"
+    },
+    "brickell-flatiron": {
+      "mint": "9XwiovZDgW8bxytvtGhQ2a7maLTSxzvton96MnS2GxWq",
+      "buildingPda": "EVmhWJ5NFcKJ9z4upiZyV7zHhZiTCSdYy3c1sNAJuT4F"
+    },
+    "jade-beach": {
+      "mint": "6JeL1wdjdqWEeb13JKqFmihKQUQyqr3fng1WBA7QytPG",
+      "buildingPda": "22MSprvc4TVv2CtS2c86Q5mUmZT94wKD6s11maf1mJGq"
+    },
+    "continuum-south": {
+      "mint": "4FAWDdgEEvt7WMRVLvJqjCSvQr3yuX671XJHPK9eAdLL",
+      "buildingPda": "6EXuK36s2nYRg68r4EBGrnWJLCF7d8m2rVyWdT3v1uDR"
+    }
+  },
+  "seededAt": "2026-08-07T00:00:04.799Z",
+  "pregraduate": {
+    "buildingId": "brickell-flatiron",
+    "targetMcapSol": 4.8
+  },
+  "notes": "Placeholder program - SDK mock mode. Ryan controversial = brickell-flatiron (#10) staged ~4.8 SOL mcap."
+}
