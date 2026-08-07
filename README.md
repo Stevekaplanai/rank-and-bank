@@ -42,29 +42,25 @@ Controversial demo building: **The Crosby** (`the-crosby`) — Ryan #79, staged 
 
 1. Push this repo to GitHub.
 2. [vercel.com/new](https://vercel.com/new) → import the repo.
-3. **Root Directory:** `apps/web`
-4. Framework: Next.js (auto).
-5. Environment variables (Production + Preview):
+3. **Root Directory:** `apps/web` (project UI — do not add a root-level `vercel.json`).
+4. Framework: Next.js (auto). `apps/web/vercel.json` supplies monorepo install/build:
 
-```
-NEXT_PUBLIC_CLUSTER=devnet
-NEXT_PUBLIC_USE_MOCK=true
-NEXT_PUBLIC_SOLANA_RPC=https://api.devnet.solana.com
-NEXT_PUBLIC_PROGRAM_ID=BondCurvE11111111111111111111111111111111112
-```
+   | Setting | Command |
+   |---|---|
+   | Install Command | `cd ../.. && npm install` |
+   | Build Command | `cd ../.. && npm run build -w @rank-and-bank/sdk && cd apps/web && npx next build` |
 
-6. After Daniel deploys: flip `NEXT_PUBLIC_USE_MOCK=false`, set real `NEXT_PUBLIC_PROGRAM_ID` + RPC, redeploy.
+5. Environment variables — set **Production** and **Preview** for all four vars (hour-0 mock demo):
+
+   | Var | Production | Preview | Hour-0 value |
+   |---|---|---|---|
+   | `NEXT_PUBLIC_CLUSTER` | ✓ | ✓ | `devnet` |
+   | `NEXT_PUBLIC_USE_MOCK` | ✓ | ✓ | `true` |
+   | `NEXT_PUBLIC_SOLANA_RPC` | ✓ | ✓ | `https://api.devnet.solana.com` |
+   | `NEXT_PUBLIC_PROGRAM_ID` | ✓ | ✓ | `BondCurvE11111111111111111111111111111111112` |
+
+6. **After Daniel deploys:** flip `NEXT_PUBLIC_USE_MOCK` to `false`, set the real `NEXT_PUBLIC_PROGRAM_ID` and RPC URL, then redeploy.
 7. Every push to `main` auto-deploys the frontend.
-
-### Optional `vercel.json` note
-
-Root Directory in the Vercel project UI is enough — no monorepo rewrite required if Root = `apps/web`. Install command can stay default; if workspaces fail on Vercel, set Install Command to:
-
-```
-cd ../.. && npm install && npm run build -w @rank-and-bank/sdk
-```
-
-…and keep Root Directory `apps/web`.
 
 ## CI/CD
 
