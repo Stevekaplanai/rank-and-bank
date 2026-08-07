@@ -1,0 +1,27 @@
+{
+  "name": "rank-and-bank",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Zillow meets pump.fun — Miami condo bonding curves on Solana",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @rank-and-bank/web",
+    "build": "npm run build -w @rank-and-bank/sdk && npm run build -w @rank-and-bank/web",
+    "lint": "npm run lint -w @rank-and-bank/web",
+    "typecheck": "npm run typecheck -w @rank-and-bank/sdk && npm run typecheck -w @rank-and-bank/web",
+    "seed": "npx tsx scripts/seed-devnet.ts",
+    "test:curve": "npx tsx scripts/test-curve.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5"
+  }
+}

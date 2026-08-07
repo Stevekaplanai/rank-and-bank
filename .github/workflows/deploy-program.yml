@@ -1,0 +1,107 @@
+name: Deploy Anchor Program (devnet)
+
+# Manual only — intentionally NOT on push/PR (burns SOL, can break live demos).
+on:
+  workflow_dispatch:
+    inputs:
+      run_seed:
+        description: "Run seed-devnet.ts after deploy"
+        type: boolean
+        default: true
+      pregraduate_building:
+        description: "Building id to stage near graduation"
+        type: string
+        default: "the-crosby"
+      pregraduate_mcap:
+        description: "Target mcap SOL before demo"
+        type: string
+        default: "4.8"
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Cache Solana / Anchor tooling
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/solana
+            ~/.cargo
+            ~/.avm
+          key: solana-anchor-${{ runner.os }}-0.30.1
+
+      - name: Install Solana CLI
+        run: |
+          sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+
+      - name: Install Anchor (avm)
+        run: |
+          cargo install --git https://github.com/coral-xyz/anchor --tag v0.30.1 avm --locked
+          avm install 0.30.1
+          avm use 0.30.1
+          anchor --version
+
+      - name: Configure deployer keypair
+        id: keypair
+        env:
+          DEVNET_DEPLOYER_KEYPAIR: ${{ secrets.DEVNET_DEPLOYER_KEYPAIR }}
+        run: |
+          if [ -z "$DEVNET_DEPLOYER_KEYPAIR" ]; then
+            echo "Missing secret DEVNET_DEPLOYER_KEYPAIR (JSON byte array of keypair)."
+            echo "Add GitHub Actions secrets before running a live deploy. Soft-skipping."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          mkdir -p ~/.config/solana
+          printf '%s\n' "$DEVNET_DEPLOYER_KEYPAIR" > ~/.config/solana/id.json
+          # Fallback in shell — do NOT use secrets.X || 'default' (invalid Actions expression).
+          RPC_URL="${{ secrets.DEVNET_SOLANA_DEPLOY_URL }}"
+          if [ -z "$RPC_URL" ]; then
+            RPC_URL="https://api.devnet.solana.com"
+          fi
+          solana config set --url "$RPC_URL"
+          solana address
+          solana balance || solana airdrop 2 || true
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Build program
+        if: steps.keypair.outputs.ready == 'true'
+        working-directory: programs/bonding_curve
+        run: anchor build
+
+      - name: Deploy to devnet
+        if: steps.keypair.outputs.ready == 'true'
+        working-directory: programs/bonding_curve
+        run: anchor deploy --provider.cluster devnet
+
+      - name: Install JS deps + seed
+        if: steps.keypair.outputs.ready == 'true' && inputs.run_seed
+        env:
+          DEPLOYMENT_PROGRAM_ID: ${{ secrets.PROGRAM_ID }}
+          SOLANA_RPC: ${{ secrets.DEVNET_SOLANA_DEPLOY_URL }}
+        run: |
+          npm install
+          if [ -z "$SOLANA_RPC" ]; then
+            export SOLANA_RPC="https://api.devnet.solana.com"
+          fi
+          npm run seed -- --pregraduate "${{ inputs.pregraduate_building }}" "${{ inputs.pregraduate_mcap }}"
+
+      - name: Upload deployment artifact
+        if: steps.keypair.outputs.ready == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployments-devnet
+          path: deployments/devnet.json
+          if-no-files-found: warn

@@ -1,0 +1,38 @@
+{
+  "cluster": "devnet",
+  "programId": "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS",
+  "rpcUrl": "https://api.devnet.solana.com",
+  "graduationThresholdSol": 5,
+  "curve": {
+    "basePriceLamports": 1000000,
+    "slopeLamports": 10000
+  },
+  "buildings": {
+    "one-thousand-museum": {
+      "mint": "4UqgJf2efbMaxTLoQbd9mX9Poo7Wqasq1b74eWXvdCti",
+      "buildingPda": "9jGSw39FzhUnzvk4Egvcb9MYu4iUxS7gA21KrQBQjmZ6"
+    },
+    "900-biscayne": {
+      "mint": "Fb5aEx5GmWUv92SGv88Y4pirmzAi8hs8FwXeav3jQvqk",
+      "buildingPda": "GDpZoZeZPQXdjdoUx9eY2dtBEMX3KH76CrHagrEDzsHk"
+    },
+    "paramount-mwc": {
+      "mint": "nsDbQEsaf39erE8RZTxptrXs7UKx6u7ExRdFS8RUPuK",
+      "buildingPda": "5vUrLrkL9dXvcK6zJuNgW6r8Q2xh7giTjc1WewZKXp5m"
+    },
+    "icon-brickell": {
+      "mint": "7aXSD1WZgsqX4vFwcJ56LhcmSc4KKhZBueRRCz2KhaFp",
+      "buildingPda": "86HDWnx5s1Jfbj3dce1AeoEbiYMknvwQAyVubjoCJBgF"
+    },
+    "the-crosby": {
+      "mint": "7KNtt55khcJ9M5FPNusndLhehUGsMdy1vhs2fti6yVdT",
+      "buildingPda": "9joSKM2Gvm56V9YDQNJWEFgts8iCAgBTjigozSVNrLEE"
+    }
+  },
+  "seededAt": "2026-08-07T00:11:36.956Z",
+  "pregraduate": {
+    "buildingId": "the-crosby",
+    "targetMcapSol": 4.8
+  },
+  "notes": "Placeholder program - SDK mock mode. Ryan controversial = the-crosby (#79) staged ~4.8 SOL mcap."
+}

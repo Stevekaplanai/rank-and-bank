@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5dade2"/>
+      <stop offset="100%" stop-color="#051c2c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect x="180" y="220" width="180" height="480" fill="#ffffff22"/>
+  <rect x="400" y="140" width="220" height="560" fill="#ffffff33"/>
+  <rect x="660" y="280" width="160" height="420" fill="#ffffff22"/>
+  <rect x="860" y="180" width="140" height="520" fill="#ffffff28"/>
+  <text x="60" y="70" fill="#e6f3f6" font-family="Georgia, serif" font-size="42">Continuum South</text>
+  <text x="60" y="110" fill="#b8dce4" font-family="Arial, sans-serif" font-size="22">Miami · Rank and Bank</text>
+</svg>
