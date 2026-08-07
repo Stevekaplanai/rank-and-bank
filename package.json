@@ -2,7 +2,7 @@
   "name": "rank-and-bank",
   "private": true,
   "version": "0.1.0",
-  "description": "Zillow meets pump.fun — Miami condo bonding curves on Solana",
+  "description": "Ryan ranks Miami condos. The community backs them on Solana bonding curves.",
   "workspaces": [
     "apps/*",
     "packages/*"

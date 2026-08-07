@@ -1,6 +1,6 @@
 # Rank & Bank
 
-Zillow meets pump.fun. Five Miami condos from Ryan's Rankings, each with a Solana bonding-curve token. Community rank = live market cap.
+Ryan ranks Miami's condos. You back the ones you believe in. Five buildings, each with a Solana bonding-curve token — community rank is live market cap.
 
 **Law:** [rank-and-bank-ard.md](./rank-and-bank-ard.md) · [rank-and-bank-prd.md](./rank-and-bank-prd.md)
 

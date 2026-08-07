@@ -1,7 +1,7 @@
 # PRD: Rank & Bank — Miami Real Estate Conviction Market
 
 ## One-liner
-Zillow meets pump.fun. 5 Miami properties from Ryan's Rankings, each with a bonding-curve token on Solana. Buy tokens to back the buildings you believe in. Price goes up as more people back it. Leaderboard ranks buildings by market cap. When a building hits a market cap threshold, it "graduates" to a Raydium AMM pool.
+Ryan ranks Miami's condos. You back the ones you believe in. 5 Miami properties from Ryan's Rankings, each with a bonding-curve token on Solana. Buy tokens to back the buildings you believe in. Price goes up as more people back it. Leaderboard ranks buildings by market cap. When a building hits a market cap threshold, it "graduates" to a Raydium AMM pool.
 
 ---
 

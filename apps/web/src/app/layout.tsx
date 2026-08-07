@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     "Ryan ranks Miami condos. The community backs them with Solana bonding-curve tokens. The chain settles everything.",
   openGraph: {
     title: "Rank & Bank",
-    description: "Zillow meets pump.fun — Miami real estate conviction markets on Solana.",
+    description:
+      "Ryan ranks Miami's condos. You back the ones you believe in — conviction markets on Solana.",
   },
 };
 
